@@ -1,0 +1,93 @@
+/*
+ *
+ * Mobile Breakpoint
+ *
+ */
+ @media screen and (max-width: 600px) {
+     
+     .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+    .footer {
+        position:fixed;
+        bottom:0;
+        width:100%;
+        z-index:9999;
+    }
+    .maincontent {
+        padding-top:8.5rem;
+        padding-bottom: 4rem;  
+    }
+    #restaurants-list li {
+        margin:1rem;
+    }
+    .inside #restaurant-container, .inside #reviews-container {
+        padding:2rem 1rem 1rem 1rem;
+    }
+    .inside #restaurant-name, .inside #reviews-container h2,
+    .inside #restaurant-address, .inside #restaurant-hours {
+        text-align:center; 
+    }
+    .inside #restaurant-hours {
+        width:100%;
+        margin:0; 
+    }
+ }
+
+
+/*
+ *
+ * Tablet Breakpoint
+ *
+ */
+ @media screen and (min-width: 601px) {
+     
+    #breadcrumb {
+        font-size: 0.8rem;
+    }
+   
+    .filter-options h2 {
+        text-align: left;
+        padding:0;
+    }
+    .filter-options select {
+        width:15rem; 
+        margin-right:1rem; 
+    }
+
+    #restaurants-list li {
+        width: calc(33.3% - 60px);
+        margin:1rem 5px;
+    }
+
+    .inside .maincontent {
+       display: flex; 
+       flex-wrap: wrap;
+    }
+    .inside #map-container {
+        width:100%;
+    }
+    .inside #restaurant-container, #reviews-container {
+        padding:1rem;
+        width: calc( 50% - 2rem);
+    }
+
+}
+
+
+/*
+ *
+ * Desktop Breakpoint
+ *
+ */
+ @media screen and (min-width: 1024px) { 
+    .header, .maincontent , .footer {
+        width:1024px;
+        margin-left:auto;
+        margin-right:auto; 
+    }
+ }
+
